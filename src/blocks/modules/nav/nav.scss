@@ -1,0 +1,33 @@
+.nav {
+
+  .container {
+    margin-bottom: 15px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #05aecc;
+  }
+
+  .nav__link {
+    height: 71px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+    text-decoration: none;
+
+    &:hover {
+      color: #ef5966;
+
+      background-color: #ffffff;
+
+      transition: 0.3s;
+    }
+  }
+}

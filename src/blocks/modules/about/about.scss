@@ -1,0 +1,118 @@
+.about {
+  padding-bottom: 30px;
+
+  .about__title {
+    padding-bottom: 10px;
+    padding-left: 24px;
+    margin-bottom: 35px;
+
+    color: #05aecc;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+
+    border-bottom: 1px solid #b9b9b9;
+  }
+
+  .about__text {
+    padding-left: 24px;
+    margin-bottom: 39px;
+
+    color: #464646;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .about__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+
+    .about__list-item {
+      position: relative;
+
+      margin-right: 30px;
+      padding-right: 42px;
+      width: 371px;
+      height: 232px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 41px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      &:nth-of-type(1) {
+        background-color: #434343;
+
+        &::before {
+          top: calc((100% - 182px) / 2);
+
+          width: 144px;
+          height: 182px;
+
+          background-image: url("../img/about-img1.png");
+        }
+      }
+
+      &:nth-of-type(2) {
+        background-color: #05aecc;
+
+        &::before {
+          top: calc((100% - 182px) / 2);
+
+          width: 142px;
+          height: 182px;
+
+          background-image: url("../img/about-img2.png");
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        background-color: #f0626e;
+
+        &::before {
+          top: calc((100% - 182px) / 2);
+
+          width: 130px;
+          height: 182px;
+
+          background-image: url("../img/about-img3.png");
+        }
+      }
+    }
+
+    .about__list-text {
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+
+  .about__button {
+    padding: 14px 240px;
+    max-width: 650px;
+    min-height: 60px;
+    margin: 0 auto;
+    display: block;
+
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+
+    background-color: #05aecc;
+  }
+}

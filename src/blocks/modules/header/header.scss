@@ -1,0 +1,130 @@
+.header {
+
+  .container {
+    margin-top: 13px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-left: 18px;
+    width: 153px;
+    height: 108px;
+
+    overflow: hidden;
+  }
+
+  .ul-top {
+    display: flex;
+    margin-bottom: 9px;
+
+    .ul-top__item {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .ul-top__item-link {
+      color: #434343;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1.44px;
+      line-height: normal;
+      text-decoration: none;
+    }
+  }
+
+  .ul-bottom {
+    display: flex;
+    justify-content: flex-end;
+
+    .ul-bottom__item {
+      margin-right: 5px;
+
+      &:nth-of-type(3) {
+
+        .ul-bottom__item-link {
+          min-width: 142px;
+
+          .ul-bottom__item-link-text {
+            padding-right: 37px;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: calc((100% - 25px) / 2);
+              right: 0;
+
+              width: 23px;
+              height: 25px;
+
+              background-image: url("../img/whislost-img.png");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        .ul-bottom__item-link {
+          min-width: 142px;
+
+          .ul-bottom__item-link-text {
+            padding-right: 34px;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: calc((100% - 24px) / 2);
+              right: 0;
+
+              width: 28px;
+              height: 24px;
+
+              background-image: url("../img/cart-img.png");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(2n) {
+
+        .ul-bottom__item-link {
+          background-color: #f0626e;
+        }
+      }
+    }
+
+    .ul-bottom__item-link {
+      min-width: 116px;
+      padding: 0 18px;
+      height: 89px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+
+      background-color: #05aecc;
+    }
+
+    .ul-bottom__item-link-text {
+      position: relative;
+
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1.44px;
+    }
+  }
+}
