@@ -112,20 +112,20 @@
                     "padding-*",
                 ]
             },
-            {
-                "properties": [
-                    "transform",
-                    "transform-*",
-                    "backface-visibility",
-                    "perspective",
-                    "perspective-origin",
-                    "transition",
-                    "transition-*",
-                    "animation",
-                    "animation-*",
-                ],
-            }
-        ]],
+                {
+                    "properties": [
+                        "transform",
+                        "transform-*",
+                        "backface-visibility",
+                        "perspective",
+                        "perspective-origin",
+                        "transition",
+                        "transition-*",
+                        "animation",
+                        "animation-*",
+                    ],
+                }
+            ]],
         "color-hex-case": ["lower", {
             "severity": "warning",
             "message": "HEX-цвета нужно указывать строчными буквами"

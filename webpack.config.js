@@ -30,7 +30,7 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader",
+                    loader: require.resolve("babel-loader"),
                     query: {
                         presets: [
                             ["@babel/preset-env", { modules: false }]
@@ -43,8 +43,7 @@ module.exports = {
 
     resolve: {
         alias: {
-            "%modules%": path.resolve(__dirname, "src/blocks/modules"),
-            "%components%": path.resolve(__dirname, "src/blocks/components")
+            "%modules%": path.resolve(__dirname, "src/blocks/modules")
         }
     }
 };

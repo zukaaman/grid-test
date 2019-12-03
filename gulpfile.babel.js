@@ -6,13 +6,13 @@ const requireDir = require("require-dir"),
     paths = {
         views: {
             src: [
-                "./src/views/index.pug",
-                "./src/views/pages/*.pug"
+                "./src/views/index.html",
+                "./src/views/pages/*.html"
             ],
             dist: "./dist/",
             watch: [
-                "./src/blocks/**/*.pug",
-                "./src/views/**/*.pug"
+                "./src/blocks/**/*.html",
+                "./src/views/**/*.html"
             ]
         },
         styles: {
@@ -37,17 +37,17 @@ const requireDir = require("require-dir"),
                 "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
             ],
             dist: "./dist/img/",
-            watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
+            watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}"
         },
         webp: {
             src: [
                 "./src/img/**/*.{jpg,jpeg,png,tiff}",
-                "!./src/img/favicon/*.{jpg,jpeg,png,gif}"
+                "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
             ],
             dist: "./dist/img/",
             watch: [
                 "./src/img/**/*.{jpg,jpeg,png,tiff}",
-                "!./src/img/favicon.{jpg,jpeg,png,gif}"
+                "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
             ]
         },
         sprites: {
@@ -61,7 +61,7 @@ const requireDir = require("require-dir"),
             watch: "./src/fonts/**/*.{woff,woff2}"
         },
         favicons: {
-            src: "./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}",
+            src: "./src/img/favicon/*.{jpg,jpeg,png,gif}",
             dist: "./dist/img/favicons/",
         },
         gzip: {
